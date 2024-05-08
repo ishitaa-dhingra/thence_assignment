@@ -42,7 +42,7 @@ function Success() {
           <br /> shortly with updates
         </p>
       </div>
-      <p className="font-Manrope text-m text-align-end text-center text-stone-600 ">
+      <p className="font-Manrope text-m text-align-end mt-[400px] text-center text-stone-600 ">
         Redirecting you to homepage in 5 seconds...
       </p>
     </>

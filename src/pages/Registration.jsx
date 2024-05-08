@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import logo from "../images/Vector.png";
 import LinkButton from "../Components/LinkButton";
 import backbutton from "../images/Frame 1261155540.png";
@@ -23,15 +22,6 @@ function Registration() {
       setEmailError(" ❗Please enter a valid email address.");
     } else {
       setEmailError("");
-    }
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (emailError || !name || !email) {
-      console.log("Invalid form data. Please correct the form.");
-    } else {
-      console.log("Form submitted successfully!");
     }
   };
 
@@ -59,36 +49,39 @@ function Registration() {
           Start your success
           <br /> Journey here!
         </p>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <input
-              type="text"
-              id="name"
-              value={name}
-              onChange={handleNameChange}
-              className="  bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
-              placeholder="Enter your name"
-              required
-            />
-          </div>
-          <div className="mb-4">
-            <input
-              type="email"
-              id="email"
-              value={email}
-              onChange={handleEmailChange}
-              className=" bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
-              placeholder="Enter your email"
-              required
-            />
-            {emailError && <p className="text-red-500">{emailError}</p>}
-          </div>
-          <center>
-            <Button type="primary" to="/success" disabled={isSubmitDisabled}>
-              Submit
-            </Button>
-          </center>
-        </form>
+
+        <div className="mb-4">
+          <input
+            type="text"
+            id="name"
+            value={name}
+            onChange={handleNameChange}
+            className="  bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div className="mb-4">
+          <input
+            type="email"
+            id="email"
+            value={email}
+            onChange={handleEmailChange}
+            className=" bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
+            placeholder="Enter your email"
+            required
+          />
+          {emailError && <p className="text-red-500">{emailError}</p>}
+        </div>
+        <center>
+          <Button
+            type="primary"
+            to={isSubmitDisabled ? "" : "/success"}
+            disabled={isSubmitDisabled}
+          >
+            Submit
+          </Button>
+        </center>
       </div>
     </>
   );
