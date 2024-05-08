@@ -28,9 +28,12 @@ const faqData = [
 
 const FAQItem = ({ faq, toggle, isOpen }) => (
   <div className="border-b ">
-    <h3 className="text-lg mb-6 mt-6 font-semibold" onClick={toggle}>
+    <h3
+      className="text-lg mb-6 mt-6 font-semibold flex justify-between"
+      onClick={toggle}
+    >
       {faq.question}
-      <span>{isOpen ? "-" : "+"}</span>
+      <span className=" ">{isOpen ? "-" : "+"}</span>
     </h3>
     {isOpen && <p>{faq.answer}</p>}
   </div>
