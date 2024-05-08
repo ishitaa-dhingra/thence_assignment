@@ -1,7 +1,18 @@
-import "./App.css";
+// App.js
+import React from "react";
+import Features from "./Components/Features";
+import Navbar from "./Components/NavBar";
+import Quote from "./Components/Quote";
+import { AchievedReduction } from "./Components/achievedReduction";
 
 function App() {
-  return <h1>hi</h1>;
+  return (
+    <>
+      <Navbar />
+      <Quote />
+      <Features />
+    </>
+  );
 }
 
 export default App;
