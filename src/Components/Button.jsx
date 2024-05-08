@@ -2,10 +2,11 @@ import { Link } from "react-router-dom";
 
 function Button({ children, disabled, to, type, onClick }) {
   const base =
-    "inline-block text-sm rounded-full bg-orange-400 font-semibold uppercase tracking-wide text-stone-800 transition-colors duration-300 hover:bg-orange-300 focus:bg-orange-400 focus:outline-none focus:ring focus:ring-orange-300 focus:ring-offset-2 disabled:cursor-not-allowed";
+    "inline-block text-sm rounded-full bg-stone-300 font-semibold uppercase tracking-wide text-stone-800 transition-colors duration-300 hover:bg-green-900 focus:bg-green-500 focus:outline-none focus:ring focus:ring-green-800 focus:ring-offset-2 disabled:cursor-not-allowed focus:text-slate-50";
 
   const styles = {
-    primary: base + " px-4 py-3 md:px-6 md:py-4",
+    primary: base + " px-4 py-3 md:px-6 md:py-4 bg-grey-500",
+
     small: base + " px-4 py-2 md:px-5 md:py-2.5 text-xs",
     round: base + " px-2.5 py-1 md:px-3.5 md:py-2 text-sm",
     secondary:

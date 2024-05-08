@@ -5,7 +5,7 @@ function Navbar() {
       <img
         src={logo}
         alt="Brunel_Logo"
-        className="h-30 w-121px object-cover top-[7.86px] left-[6.78px]"
+        className="h-5 w-121px object-cover top-[7.86px] left-[6.78px]"
       />
       <nav>
         <ul className="flex space-x-4">
