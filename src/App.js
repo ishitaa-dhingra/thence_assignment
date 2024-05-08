@@ -1,17 +1,22 @@
-// App.js
-import React from "react";
-import Features from "./Components/Features";
-import Navbar from "./Components/NavBar";
-import Quote from "./Components/Quote";
-import { AchievedReduction } from "./Components/achievedReduction";
+// // App.js
+// import React from "react";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import Registration from "./pages/Registration";
+import Success from "./pages/Success";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Quote />
-      <Features />
-    </>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="registration" element={<Registration />} />
+          <Route path="success" element={<Success />} />;
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 
