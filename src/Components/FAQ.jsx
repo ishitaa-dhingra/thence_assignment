@@ -24,6 +24,11 @@ const faqData = [
     answer:
       "Our customer service team can assist you in making the right choice.",
   },
+  {
+    question: "Who can help me pick a right skillset and duration for me?",
+    answer:
+      "Our customer service team can assist you in making the right choice.",
+  },
 ];
 
 const FAQItem = ({ faq, toggle, isOpen }) => (
