@@ -33,7 +33,7 @@ function Registration() {
         <img
           src={logo}
           alt="Brunel_Logo"
-          className="h-6 w-121px  top-[31.86px] left-[52.78px]"
+          className="h-[30.5px] w-[121px]  top-[31.86px] left-[52.78px]"
         />
         <div className="mr-4">
           <LinkButton to="/" className="text-blue-500">
@@ -45,7 +45,7 @@ function Registration() {
         <h2 className="text-center text-[#2DA950]  font-DM text-[36px] font-normal leading-[39.6px] tracking-tighter pt-8">
           Registration Form
         </h2>
-        <p className="font-Manrope text-5xl font-semibold leading-[67.2px] tracking-tighter text-center mb-10">
+        <p className="font-Manrope text-5xl font-semibold leading-[67.2px] tracking-tighter text-center mb-12">
           Start your success
           <br /> Journey here!
         </p>
@@ -56,7 +56,7 @@ function Registration() {
             id="name"
             value={name}
             onChange={handleNameChange}
-            className="  bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
+            className=" h-[75px] w-[417px] bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
             placeholder="Enter your name"
             required
           />
@@ -67,7 +67,7 @@ function Registration() {
             id="email"
             value={email}
             onChange={handleEmailChange}
-            className=" bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
+            className="h-[75px] w-[417px]  bg-gray-100 rounded-[65.28px] w-full px-5 py-2 border  focus:outline-none focus:border-green-700"
             placeholder="Enter your email"
             required
           />
@@ -78,6 +78,7 @@ function Registration() {
             type="primary"
             to={isSubmitDisabled ? "" : "/success"}
             disabled={isSubmitDisabled}
+            className="h-[30.5px] w-[121px]  "
           >
             Submit
           </Button>

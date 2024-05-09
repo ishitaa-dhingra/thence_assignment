@@ -31,7 +31,7 @@ function MyCorousel() {
         {slides.map((_, index) => (
           <span
             key={index}
-            className={`dot w-3 h-3 rounded-full cursor-pointer ${
+            className={`dot w-2 h-2 rounded-full cursor-pointer ${
               index === currentSlide ? "bg-green-600" : "bg-gray-400 "
             }`}
             onClick={() => setCurrentSlide(index)}
@@ -43,16 +43,21 @@ function MyCorousel() {
         idname="black"
         bgcolor="black"
         color="white"
-        style={{ display: "inline-flex", alignItems: "center" }}
+        style={{ display: "inline-flex", alignItems: "center", width: "254px" }}
       >
-        <span style={{ display: "inline-flex", alignItems: "center" }}>
+        <span
+          style={{
+            display: "inline-flex",
+            alignItems: "left",
+          }}
+        >
           Explore More
           <span>
             <svg
               id="carouselsvg"
-              width="16"
-              height="16"
-              viewBox="0 0 16 16"
+              width="10"
+              height="10"
+              viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
