@@ -56,7 +56,7 @@ function Registration() {
             id="name"
             value={name}
             onChange={handleNameChange}
-            className=" h-[75px] w-[417px] bg-gray-100 rounded-[65.28px] w-full px-4 py-2 border  focus:outline-none focus:border-green-700"
+            className=" h-[75px] w-[417px] bg-gray-100 rounded-[65.28px]  px-4 py-2 border  focus:outline-none focus:border-green-700"
             placeholder="Enter your name"
             required
           />
@@ -67,7 +67,7 @@ function Registration() {
             id="email"
             value={email}
             onChange={handleEmailChange}
-            className="h-[75px] w-[417px]  bg-gray-100 rounded-[65.28px] w-full px-5 py-2 border  focus:outline-none focus:border-green-700"
+            className="h-[75px] w-[417px]  bg-gray-100 rounded-[65.28px]  px-4 py-2 border  mb-8 focus:outline-none m focus:border-green-700"
             placeholder="Enter your email"
             required
           />
@@ -75,10 +75,9 @@ function Registration() {
         </div>
         <center>
           <Button
-            type="primary"
+            type="submitbutton"
             to={isSubmitDisabled ? "" : "/success"}
             disabled={isSubmitDisabled}
-            className="h-[30.5px] w-[121px]  "
           >
             Submit
           </Button>
