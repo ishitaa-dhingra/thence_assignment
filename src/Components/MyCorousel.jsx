@@ -43,7 +43,7 @@ function MyCorousel() {
         idname="black"
         bgcolor="black"
         color="white"
-        style={{ display: "inline-flex", alignItems: "center", width: "254px" }}
+        style={{ display: "inline-flex", alignItems: "center" }}
       >
         <span
           style={{
@@ -55,9 +55,9 @@ function MyCorousel() {
           <span>
             <svg
               id="carouselsvg"
-              width="10"
-              height="10"
-              viewBox="0 0 20 20"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
