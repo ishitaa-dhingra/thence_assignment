@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Button from "./Button";
+import check from "../images/Group 1171281397.png";
 
 function MyCorousel() {
   const slides = [
     "Enhance fortune 50 company’s insights teams research capabilities",
-    "Maximize top-tier corporation's insights division's research efficacy",
-    "Boost multinational conglomerate's analysis unit's exploration potential",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod ",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod ",
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -21,13 +22,16 @@ function MyCorousel() {
   }, [currentSlide]);
 
   return (
-    <div className="herocarouseldiv max-w-[400px] ml-[950px] mt-36 ml-15 mx-auto">
+    <div
+      className="herocarouseldiv max-w-[400px] ml-[950px] mt-36 ml-15 mx-auto "
+      style={{ backgroundImage: `url(${check})` }}
+    >
       <p className="text-4xl font-semibold">{slides[currentSlide]}</p>
       <div className="flex gap-4 mt-8 mb-20">
         {slides.map((_, index) => (
           <span
             key={index}
-            className={`dot w-4 h-4 rounded-full cursor-pointer ${
+            className={`dot w-3 h-3 rounded-full cursor-pointer ${
               index === currentSlide ? "bg-green-600" : "bg-gray-400 "
             }`}
             onClick={() => setCurrentSlide(index)}

@@ -29,7 +29,7 @@ const faqData = [
 const FAQItem = ({ faq, toggle, isOpen }) => (
   <div className="border-b ">
     <h3
-      className="text-lg mb-6 mt-6 font-semibold flex justify-between"
+      className="text-lg mb-8 mt-8 font-semibold flex justify-between"
       onClick={toggle}
     >
       {faq.question}
