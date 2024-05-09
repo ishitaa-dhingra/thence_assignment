@@ -1,21 +1,33 @@
 import logo from "../images/Vector.png";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LinkButton from "../Components/LinkButton";
 import backbutton from "../images/Frame 1261155540.png";
 import tick from "../images/Tick + round.png";
+
 function Success() {
   const navigate = useNavigate();
+  const [remainingTime, setRemainingTime] = useState(5);
+
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       navigate("/");
-    }, 5000);
+    }, remainingTime * 1000);
+
     return () => clearTimeout(timeoutId);
-  }, [navigate]);
+  }, [navigate, remainingTime]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setRemainingTime((prevTime) => (prevTime > 0 ? prevTime - 1 : 0));
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, []);
+
   return (
     <>
-      {" "}
-      <div class="bg-white rounded-[65.28px]  flex justify-between items-center p-4 w-1392 h-111.17  m-4 ">
+      <div className="bg-white rounded-[65.28px] flex justify-between items-center p-4 w-1392 h-111.17 m-4 ">
         <img
           src={logo}
           alt="Brunel_Logo"
@@ -43,7 +55,8 @@ function Success() {
         </p>
       </div>
       <p className="font-Manrope text-m text-align-end mt-[400px] text-center text-stone-600 ">
-        Redirecting you to homepage in 5 seconds...
+        Redirecting you to homepage in {remainingTime}{" "}
+        {remainingTime === 1 ? "second" : "seconds"}...
       </p>
     </>
   );
