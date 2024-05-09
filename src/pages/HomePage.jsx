@@ -5,7 +5,8 @@ import Quote from "../Components/Quote";
 
 import FAQ_BOX from "../Components/FAQ_BOX";
 import Footer from "../Components/Footer";
-import MyCarousel from "../Components/MyCorousel";
+import MyCorousel from "../Components/MyCorousel";
+import { IoMdArrowForward } from "react-icons/io";
 
 function HomePage() {
   return (
@@ -14,7 +15,8 @@ function HomePage() {
       <Navbar />
       <Quote />
       <Features />
-      <MyCarousel />
+      <MyCorousel />
+
       <FAQ_BOX />
       <Footer />
     </>

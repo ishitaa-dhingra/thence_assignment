@@ -1,3 +1,4 @@
+import arrow from "../images/Arrow.svg";
 function Left() {
   return (
     <div>
@@ -7,6 +8,7 @@ function Left() {
       <p className="font-Manrope text-5xl font-semibold leading-[67.2px] tracking-tighter text-left">
         Ask Questions
       </p>
+      <img src={arrow} alt="arrow" />
     </div>
   );
 }
