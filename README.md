@@ -18,7 +18,7 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd thence
+  cd thence_assignment
 ```
 
 Install dependencies
