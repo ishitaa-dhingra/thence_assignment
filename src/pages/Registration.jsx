@@ -42,7 +42,7 @@ function Registration() {
         </div>
       </div>
       <div className="max-w-md mx-auto p-6 bg-white ">
-        <h2 className="text-center text-green-600 font-DM text-3xl font-normal leading-[39.6px] tracking-tighter pt-8">
+        <h2 className="text-center text-[#2DA950]  font-DM text-[36px] font-normal leading-[39.6px] tracking-tighter pt-8">
           Registration Form
         </h2>
         <p className="font-Manrope text-5xl font-semibold leading-[67.2px] tracking-tighter text-center mb-10">
